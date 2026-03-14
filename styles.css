@@ -229,18 +229,18 @@ header {
 
 @media (min-width: 900px) {
   .form-section {
-    padding: 8rem 4rem;
+    padding: 8rem 2rem;
   }
 }
 
 .form-wrapper {
-  max-width: 500px;
+  max-width: 650px; /* Increased from 500px */
   width: 100%;
   margin: 0 auto;
 }
 
 .form-title {
-  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 4vw, 3.5rem); /* Scalable title */
   color: var(--chilli-black);
   margin-bottom: 0.5rem;
 }
@@ -274,12 +274,12 @@ label {
 
 input, select {
   width: 100%;
-  padding: 1rem;
+  padding: 1.15rem; /* Slightly more padding */
   border: 2px solid #ddd;
   background-color: var(--chilli-white);
   border-radius: 8px;
   font-family: var(--font-body);
-  font-size: 1rem;
+  font-size: 1.1rem; /* Slightly larger text */
   transition: all 0.3s ease;
   color: var(--chilli-black);
 }
@@ -300,13 +300,13 @@ select {
 
 .btn-submit {
   width: 100%;
-  padding: 1.25rem;
+  padding: 1.5rem; /* More padding for a bigger hit area */
   background-color: var(--chilli-red);
   color: var(--chilli-white);
   border: none;
   border-radius: 8px;
   font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-size: 1.75rem; /* Larger button text */
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
